@@ -5,8 +5,6 @@ context:
   version: "1.19.0b0"
   openjdk_min: "17"
   jpype1_min: "1.5.0"
-  # will move to `conda_build_config.yaml`: being ignored in `staged-recipes`
-  python_min: "3.10"
 
 package:
   name: timefold
@@ -21,7 +19,7 @@ source:
     sha256: 66f18fb55d18257525df72a764360bb01233d40333efbfea9b74939febe0e75b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - cd dist
