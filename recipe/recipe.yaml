@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.19.0b0"
+  version: "1.20.0b0"
   openjdk_min: "17"
   jpype1_min: "1.5.0"
 
@@ -13,13 +13,13 @@ package:
 source:
   - target_directory: dist
     url: https://pypi.org/packages/source/t/timefold/timefold-${{ version }}.tar.gz
-    sha256: e931359e1d8f2817a097fe8651d9ec6f83e3b76b2cad758de002c419b5a21456
+    sha256: 8d8769ea3029e3cdc7e1decc6711a2ad1a8b59c01e21f4aadcd9b740b4695396
   - target_directory: src
     url: https://github.com/TimefoldAI/timefold-solver/archive/refs/tags/v${{ version | replace("b0", "") }}.tar.gz
-    sha256: 66f18fb55d18257525df72a764360bb01233d40333efbfea9b74939febe0e75b
+    sha256: af11cba89b9e346d179357b63b45caac12e093ef5e67d78e5608b44d37f37307
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - cd dist
