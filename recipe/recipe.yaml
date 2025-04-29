@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.21.0b0"
+  version: "1.22.0b0"
   openjdk_min: "17"
   jpype1_min: "1.5.0"
 
@@ -13,10 +13,10 @@ package:
 source:
   - target_directory: dist
     url: https://pypi.org/packages/source/t/timefold/timefold-${{ version }}.tar.gz
-    sha256: aafb492d28182295aa2ac41777f81fddcfa2d8ecd8cfe236f479a2956e74b016
+    sha256: 71a564223892057a5ffd598c52fca51441c6f1f78b3e3de5dd351786a0a9fd16
   - target_directory: src
     url: https://github.com/TimefoldAI/timefold-solver/archive/refs/tags/v${{ version | replace("b0", "") }}.tar.gz
-    sha256: 8848aea80bdb85ee4d522925c77102ee7b7af9557637d84e6ff0ce0be42d6393
+    sha256: 1aadc19ec06f7bb73855556fcba7b64a89ab4bb5245f500a09a0ee8e2d8e896f
 
 build:
   number: 0
@@ -57,7 +57,7 @@ tests:
       - coverage report --show-missing --skip-covered --fail-under=70
 
 about:
-  homepage: https://timefold.ai/open-source-solver
+  homepage: https://solver.timefold.ai
   license_file: dist/LICENSE.txt
   license: Apache-2.0
   summary: An AI constraint solver that optimizes planning and scheduling problems
