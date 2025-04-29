@@ -57,7 +57,7 @@ tests:
       - coverage report --show-missing --skip-covered --fail-under=70
 
 about:
-  homepage: https://timefold.ai/open-source-solver
+  homepage: https://solver.timefold.ai
   license_file: dist/LICENSE.txt
   license: Apache-2.0
   summary: An AI constraint solver that optimizes planning and scheduling problems
