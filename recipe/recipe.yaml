@@ -40,9 +40,11 @@ requirements:
 
 tests:
   - python:
-      pip_check: true
-      python_version: ${{ python_min }}.*
       imports: timefold
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - 3.13.*
   - files:
       source:
         - src/python/python-core/tests/
