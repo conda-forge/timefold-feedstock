@@ -4,7 +4,7 @@ schema_version: 1
 context:
   version: "1.23.0b0"
   openjdk_min: "17"
-  jpype1_min: "1.5.0"
+  jpype1_min: "1.5.1"
 
 package:
   name: timefold
@@ -27,14 +27,14 @@ build:
 
 requirements:
   host:
-    - jpype1 >=${{ jpype1_min }}
+    - jpype1 ${{ jpype1_min }}.*
     - openjdk ${{ openjdk_min }}.*
     - pip
     - python ${{ python_min }}.*
     - setuptools
     - stubgenj >=0.2.5
   run:
-    - jpype1 >=${{ jpype1_min }}
+    - jpype1 ${{ jpype1_min }}.*
     - openjdk >=${{ openjdk_min }}
     - python >=${{ python_min }}
 
